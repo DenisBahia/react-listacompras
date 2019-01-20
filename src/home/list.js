@@ -11,7 +11,7 @@ import "./list.css"
 const List = (props) => {
     return (
         <CustomCard containerClass="list-container" 
-            footer={<ListFooter total={props.total}></ListFooter>}
+            footer={<ListFooter date={props.date} total={props.total}></ListFooter>}
             link="/lista/edicao"
             cardClass={props.openedItems < 1 ? "closed-list" : "opened-list"}
             >
